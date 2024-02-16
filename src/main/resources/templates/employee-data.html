@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"><meta charset="ISO-8859-1">
+<title>Form</title>
+<link href="/css/myStyle.css" rel="stylesheet"></link>
+</head>
+<body>
+<h1>Employee Details</h1>
+	<table>
+		<tr>
+			<td><h4>Employee id:</h4></td>
+			<td><h4 style="color: blue" th:text="${employee.empId}"></h4></td>
+		</tr>
+		<tr>
+			<td><h4>Employee Name:</h4></td>
+			<td><h4 style="color: blue" th:text="${employee.name}"></h4></td>
+		</tr>
+		<tr>
+			<td><h4>Employee salary:</h4></td>
+			<td><h4 style="color: blue" th:text="${employee.salary}"></h4></td>
+		</tr>
+	</table>
+<a th:href="@{/}"> Back</a>
+</body>
+</html>
